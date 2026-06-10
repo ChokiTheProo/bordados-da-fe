@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coleção Bordados da Fé — 130 desenhos católicos prontos para sua máquina de bordar. Acesso imediato, pagamento único de R$15,90 e garantia de 7 dias.">
+  <title>Bordados da Fé — 130 Desenhos Católicos para sua Máquina | Por apenas R$15,90</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================= SVG SPRITE (icones reusaveis) ========================= -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <!-- ======= UI ICONS ======= -->
+
+    <symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="m9 12 2 2 4-4"/>
+    </symbol>
+
+    <symbol id="i-flame" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2c0 4-3 4-3 8a3 3 0 0 0 6 0c0-1.5-1-2.5-1-4 2.5 1 4.5 3 4.5 6.5a6.5 6.5 0 1 1-13 0c0-4.5 6.5-6 6.5-10.5z"/>
+    </symbol>
+
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13 2 3 14h7l-1 8 11-13h-7z"/>
+    </symbol>
+
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="11" width="16" height="10" rx="2"/>
+      <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+    </symbol>
+
+    <symbol id="i-needle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21 L21 3"/>
+      <circle cx="5" cy="19" r="1.5" fill="currentColor"/>
+      <path d="M8 22 L10 20 L12 22 L14 20" stroke-width="1.5"/>
+    </symbol>
+
+    <symbol id="i-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="8" r="6"/>
+      <path d="M18.09 10.37A6 6 0 1 1 10.34 18"/>
+      <path d="M7 6h1v4"/>
+      <path d="m16.71 13.88.7.71-2.82 2.82"/>
+    </symbol>
+
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </symbol>
+
+    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 12 20 22 4 22 4 12"/>
+      <rect x="2" y="7" width="20" height="5"/>
+      <line x1="12" y1="22" x2="12" y2="7"/>
+      <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+      <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+    </symbol>
+
+    <symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="10" y1="2" x2="14" y2="2"/>
+      <line x1="12" y1="14" x2="15" y2="11"/>
+      <circle cx="12" cy="14" r="8"/>
+    </symbol>
+
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    </symbol>
+
+    <symbol id="i-trend-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+      <polyline points="17 6 23 6 23 12"/>
+    </symbol>
+
+    <symbol id="i-no-recurring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="16" rx="2"/>
+      <line x1="3" y1="10" x2="21" y2="10"/>
+      <line x1="8" y1="3" x2="8" y2="7"/>
+      <line x1="16" y1="3" x2="16" y2="7"/>
+      <line x1="8" y1="14" x2="16" y2="18" stroke-width="2.5"/>
+      <line x1="16" y1="14" x2="8" y2="18" stroke-width="2.5"/>
+    </symbol>
+
+    <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+    </symbol>
+
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </symbol>
+
+    <symbol id="i-chat-dots" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      <circle cx="8" cy="11.5" r="1" fill="currentColor"/>
+      <circle cx="12" cy="11.5" r="1" fill="currentColor"/>
+      <circle cx="16" cy="11.5" r="1" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </symbol>
+
+    <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+      <line x1="7" y1="7" x2="7.01" y2="7"/>
+    </symbol>
+
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </symbol>
+
+    <!-- ======= ICONES RELIGIOSOS (silhuetas) ======= -->
+
+    <symbol id="i-cross" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M10.5 2h3v6h5.5v3.5h-5.5V22h-3V11.5H5V8h5.5V2z"/>
+    </symbol>
+
+    <symbol id="i-church" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11 1h2v2h2v2h-2v1.5l5 2.7V22h-5v-4a2 2 0 0 0-4 0v4H4V9.2l5-2.7V5H7V3h2V1zm1 8L7 11.5V20h2.5v-2a2.5 2.5 0 0 1 5 0v2H17v-8.5L12 9z"/>
+    </symbol>
+
+    <symbol id="i-dove" viewBox="0 0 24 24" fill="currentColor">
+      <!-- silhueta de pomba estilizada -->
+      <path d="M22 5c-2-1-5 0-7 2l-2.5 2.5c-1 0-2 0-3 .5L7 11c-1 .5-2 1.5-2.5 3l-1.5 4.5 4.5-1.5c1 1 2.5 1.5 4 1.5 3 0 5.5-1.5 6.5-4l1-3c1.5 0 2.5-1 3-2.5 0-1 0-2.5-.5-3.5l.5-1zM18 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+      <!-- raio decorativo -->
+      <path d="M3 22l2-2" stroke="currentColor" stroke-width="1" opacity=".5"/>
+    </symbol>
+
+    <symbol id="i-rosary" viewBox="0 0 24 24" fill="currentColor">
+      <!-- contas circulares -->
+      <circle cx="12" cy="3.5" r="1.3"/>
+      <circle cx="16" cy="5" r="1.3"/>
+      <circle cx="18.5" cy="8" r="1.3"/>
+      <circle cx="19" cy="12" r="1.3"/>
+      <circle cx="16.5" cy="15" r="1.3"/>
+      <circle cx="7.5" cy="15" r="1.3"/>
+      <circle cx="5" cy="12" r="1.3"/>
+      <circle cx="5.5" cy="8" r="1.3"/>
+      <circle cx="8" cy="5" r="1.3"/>
+      <!-- conexao para cruz -->
+      <path d="M12 16v2"/>
+      <!-- cruz pendente -->
+      <path d="M11 18h2v1.5h1.5V21H13v2h-2v-2H9.5v-1.5H11V18z"/>
+    </symbol>
+
+    <symbol id="i-pray" viewBox="0 0 24 24" fill="currentColor">
+      <!-- maos em prece -->
+      <path d="M9 3a1 1 0 0 1 1 1v7h1V3a1 1 0 1 1 2 0v8h1V4a1 1 0 1 1 2 0v8.5c1 .5 1.5 2 1.5 3.5 0 3-2.5 6-5.5 6S5.5 19 5.5 16c0-1.5.5-3 1.5-3.5V5a1 1 0 1 1 2 0v6h-1V3z"/>
+    </symbol>
+
+    <symbol id="i-angel" viewBox="0 0 24 24" fill="currentColor">
+      <!-- halo -->
+      <ellipse cx="12" cy="3" rx="4.5" ry="1.2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <!-- cabeca -->
+      <circle cx="12" cy="7.5" r="2.5"/>
+      <!-- corpo / tunica -->
+      <path d="M9 11h6l3 11H6z"/>
+      <!-- asa esquerda -->
+      <path d="M9 12c-3.5 0-5 3-5 5.5l5-1.5z" opacity=".75"/>
+      <!-- asa direita -->
+      <path d="M15 12c3.5 0 5 3 5 5.5l-5-1.5z" opacity=".75"/>
+    </symbol>
+
+    <symbol id="i-candle" viewBox="0 0 24 24" fill="currentColor">
+      <!-- chama -->
+      <path d="M12 2c-1.5 2-3 4-3 6a3 3 0 0 0 6 0c0-2-1.5-4-3-6z"/>
+      <!-- corpo da vela -->
+      <rect x="9" y="10" width="6" height="11" rx="1"/>
+      <!-- base -->
+      <rect x="7" y="20.5" width="10" height="2.2" rx="1"/>
+    </symbol>
+
+    <symbol id="i-rose" viewBox="0 0 24 24" fill="currentColor">
+      <!-- petalas externas -->
+      <path d="M12 3c-3 0-5 2-5 5 0 1.5 1 3 2 3.5-.5 1 0 2 1 2.5C9 15 10 16 12 16s3-1 2-2c1-.5 1.5-1.5 1-2.5 1-.5 2-2 2-3.5 0-3-2-5-5-5z"/>
+      <!-- centro -->
+      <circle cx="12" cy="8.5" r="2" fill="#fff" fill-opacity=".25"/>
+      <!-- caule -->
+      <rect x="11.4" y="15" width="1.2" height="7"/>
+      <!-- folha -->
+      <path d="M13 18c2 0 3.5 1 3.5 2.5-2 0-3.5-1-3.5-2.5z" opacity=".85"/>
+    </symbol>
+
+    <symbol id="i-chalice" viewBox="0 0 24 24" fill="currentColor">
+      <!-- hostia no topo -->
+      <circle cx="12" cy="1.8" r="1.5"/>
+      <!-- copo -->
+      <path d="M5 4h14v3.5c0 4-3 7-7 7s-7-3-7-7V4z"/>
+      <!-- haste -->
+      <rect x="11" y="14" width="2" height="5.5"/>
+      <!-- base -->
+      <rect x="5.5" y="19.5" width="13" height="2.5" rx="1.2"/>
+    </symbol>
+
+    <symbol id="i-heart-flame" viewBox="0 0 24 24" fill="currentColor">
+      <!-- chama em cima -->
+      <path d="M12 0c-1 1.5-2 2.8-2 4.5.8-.5 1.7-.5 2.5.3.5-1.3-.5-2.5-.5-4.8z"/>
+      <!-- coracao -->
+      <path d="M12 22s-9-6-9-12c0-3 2-5 5-5 1.5 0 3 .8 4 2.5C13 5.8 14.5 5 16 5c3 0 5 2 5 5 0 6-9 12-9 12z"/>
+    </symbol>
+  </svg>
+
+  <!-- ========================= HERO ========================= -->
+  <header class="hero">
+    <div class="container">
+      <span class="hero__badge">
+        <svg class="icon"><use href="#i-shield-check"/></svg>
+        Compra 100% Segura e Protegida
+      </span>
+
+      <div class="hero__brand">Coleção Bordados da Fé</div>
+
+      <h1 class="hero__title">
+        +130 Desenhos Católicos prontos para sua <em>máquina de bordar</em>
+      </h1>
+
+      <p class="hero__subtitle">
+        Tudo já digitalizado e organizado. Compatível com as principais máquinas domésticas e profissionais.
+      </p>
+
+      <!-- Capa do produto -->
+      <div class="hero__mockup" aria-label="Coleção Bordados da Fé — capa do produto">
+        <img class="hero__mockup-img" src="capa-produto.png" alt="Caixa premium da Coleção +130 Bordados Católicos com tablet mostrando os desenhos e amostra bordada" loading="eager" width="540">
+        <div class="hero__mockup-glow" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__cta-wrap">
+        <a href="#comprar" class="btn btn--cta btn--cta-large">
+          Quero minha coleção por R$15,90
+          <svg class="icon"><use href="#i-arrow-right"/></svg>
+        </a>
+        <p class="hero__microcopy">
+          <svg class="icon icon--bolt"><use href="#i-bolt"/></svg>
+          <strong>Acesso imediato</strong> após o pagamento
+          <span class="hero__microcopy-sep">•</span>
+          <svg class="icon icon--lock"><use href="#i-lock"/></svg>
+          Pague uma vez, use para sempre
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================= STEPS ========================= -->
+  <section class="steps" aria-label="Como funciona">
+    <div class="container">
+      <p class="steps__title">É simples assim:</p>
+      <div class="steps__list">
+        <div class="steps__item">
+          <span class="steps__num">1</span>
+          <span>Você baixa a coleção</span>
+        </div>
+        <span class="steps__arrow">→</span>
+        <div class="steps__item">
+          <span class="steps__num">2</span>
+          <span>Escolhe o desenho</span>
+        </div>
+        <span class="steps__arrow">→</span>
+        <div class="steps__item">
+          <span class="steps__num">3</span>
+          <span>Começa a bordar em minutos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PERSONAS ========================= -->
+  <section class="section">
+    <div class="container">
+      <span class="section__eyebrow">Pra quem é</span>
+      <h2 class="section__title">Essa coleção foi feita pra você que...</h2>
+
+      <div class="personas">
+        <article class="persona">
+          <div class="persona__icon"><svg class="icon"><use href="#i-needle"/></svg></div>
+          <p class="persona__text">Quer entrar no nicho religioso e parar de bordar só o que todo mundo borda</p>
+        </article>
+        <article class="persona">
+          <div class="persona__icon"><svg class="icon"><use href="#i-coins"/></svg></div>
+          <p class="persona__text">Já borda e quer aumentar o ticket vendendo peças sacras para igrejas e devotos</p>
+        </article>
+        <article class="persona">
+          <div class="persona__icon"><svg class="icon"><use href="#i-clock"/></svg></div>
+          <p class="persona__text">Cansou de perder horas garimpando desenhos religiosos pela internet</p>
+        </article>
+        <article class="persona">
+          <div class="persona__icon"><svg class="icon"><use href="#i-gift"/></svg></div>
+          <p class="persona__text">Quer presentear quem ama com uma peça única, feita com fé e carinho</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CATALOG (vitrine de bordados) ========================= -->
+  <section class="section section--dark">
+    <div class="container">
+      <span class="section__eyebrow">O que você vai receber</span>
+      <h2 class="section__title">Alguns dos bordados que vão pra sua máquina</h2>
+      <p class="section__lead">
+        Cada arquivo foi testado em máquina antes de entrar no acervo.
+      </p>
+
+      <div class="catalog-showcase">
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_nossa_senhora.png" alt="Bordado delicado de Nossa Senhora" loading="lazy">
+        </figure>
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_aparecida.png" alt="Bordado delicado de Nossa Senhora Aparecida" loading="lazy">
+        </figure>
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_espirito_santo.png" alt="Bordado delicado do Espírito Santo" loading="lazy">
+        </figure>
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_anjo.png" alt="Bordado delicado de Anjo em prece" loading="lazy">
+        </figure>
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_cruz.png" alt="Bordado delicado de Cruz" loading="lazy">
+        </figure>
+        <figure class="catalog-tile">
+          <img src="bordado_delicado_sao_jose.png" alt="Bordado delicado de São José" loading="lazy">
+        </figure>
+      </div>
+
+      <p class="catalog-cap">+ <strong>124 outros desenhos</strong> esperando por você no pacote completo</p>
+    </div>
+  </section>
+
+  <!-- ========================= AUDIENCE (tem máquina? não tem?) ========================= -->
+  <section class="section">
+    <div class="container">
+      <span class="section__eyebrow">Pra todo mundo</span>
+      <h2 class="section__title">Funciona se você <em style="color:var(--gold)">já tem</em> máquina — e até se <em style="color:var(--secondary)">ainda não tem</em></h2>
+      <p class="section__lead">
+        Os dois caminhos levam ao mesmo lugar: você lucrando com peças religiosas. A diferença é só por onde você começa.
+      </p>
+
+      <div class="audience-cards">
+        <article class="audience-card">
+          <div class="audience-card__icon"><svg class="icon"><use href="#i-gear"/></svg></div>
+          <span class="audience-card__pill">Caminho 1</span>
+          <h3 class="audience-card__title">Você já tem máquina de bordar</h3>
+          <p class="audience-card__text">
+            Perfeito — você está a 2 minutos de começar a faturar. Baixa o pacote, abre no software da sua máquina e em <strong>menos de uma hora você já tem a primeira peça pronta</strong>. Os 130 arquivos vêm nos principais formatos (PES, DST, JEF, EXP, VP3, XXX, HUS), então não tem mistério.
+          </p>
+        </article>
+
+        <article class="audience-card audience-card--alt">
+          <div class="audience-card__icon"><svg class="icon"><use href="#i-coins"/></svg></div>
+          <span class="audience-card__pill">Caminho 2</span>
+          <h3 class="audience-card__title">Ainda não tem máquina</h3>
+          <p class="audience-card__text">
+            Sem problema. Você pode <strong>terceirizar com uma bordadeira da sua cidade</strong>, vender as peças prontas no seu nome e usar o lucro pra comprar sua própria máquina depois. Os arquivos são vitalícios — vão esperar você o tempo que precisar.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= BONUS ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="bonuses-pill-wrap">
+        <span class="bonuses-pill">
+          <svg class="icon"><use href="#i-flame"/></svg>
+          3 Bônus Exclusivos
+        </span>
+      </div>
+      <h2 class="section__title">Comprando hoje, você leva ainda 3 bônus</h2>
+      <p class="section__lead">
+        Três presentes que, juntos, valem mais de R$190 — e que você recebe sem pagar nada a mais, no mesmo e-mail da coleção principal.
+      </p>
+
+      <div class="bonuses">
+
+        <!-- ===== BÔNUS 1 ===== -->
+        <article class="bonus-card">
+          <div class="bonus-card__cover bonus-card__cover--1">
+            <span class="bonus-card__badge">
+              <svg class="icon"><use href="#i-gift"/></svg>
+              Bônus 1
+            </span>
+            <div class="bonus-card__center">
+              <svg class="bonus-card__bigicon"><use href="#i-cross"/></svg>
+              <span class="bonus-card__cover-label">Pack Cristão<br>Premium</span>
+            </div>
+          </div>
+          <div class="bonus-card__body">
+            <h3 class="bonus-card__title">Pack Cristão Premium</h3>
+            <p class="bonus-card__text">
+              Receba uma coleção adicional com símbolos cristãos clássicos pra ampliar ainda mais suas opções de bordado.
+            </p>
+            <div class="bonus-card__cta">
+              Valor: <s>R$67</s> <strong>GRÁTIS</strong>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== BÔNUS 2 ===== -->
+        <article class="bonus-card">
+          <div class="bonus-card__cover bonus-card__cover--2">
+            <span class="bonus-card__badge">
+              <svg class="icon"><use href="#i-gift"/></svg>
+              Bônus 2
+            </span>
+            <div class="bonus-card__center">
+              <div class="bonus-card__multi">
+                <svg><use href="#i-cross"/></svg>
+                <svg><use href="#i-cross"/></svg>
+                <svg><use href="#i-cross"/></svg>
+              </div>
+              <span class="bonus-card__cover-label">Cruzes &amp;<br>Crucifixos</span>
+            </div>
+          </div>
+          <div class="bonus-card__body">
+            <h3 class="bonus-card__title">Pack Premium de Cruzes e Crucifixos</h3>
+            <p class="bonus-card__text">
+              Amplie sua coleção com diversos modelos de cruzes e crucifixos prontos pra usar em diferentes tipos de peças e encomendas religiosas.
+            </p>
+            <div class="bonus-card__cta">
+              Valor: <s>R$47</s> <strong>GRÁTIS</strong>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== BÔNUS 3 ===== -->
+        <article class="bonus-card">
+          <div class="bonus-card__cover bonus-card__cover--3">
+            <span class="bonus-card__badge">
+              <svg class="icon"><use href="#i-gift"/></svg>
+              Bônus 3
+            </span>
+            <div class="bonus-card__center">
+              <svg class="bonus-card__bigicon"><use href="#i-tag"/></svg>
+              <span class="bonus-card__cover-label">Etiquetas<br>Religiosas</span>
+            </div>
+          </div>
+          <div class="bonus-card__body">
+            <h3 class="bonus-card__title">Kit de Etiquetas Religiosas (Editáveis no Canva)</h3>
+            <p class="bonus-card__text">
+              Personalize suas encomendas com etiquetas prontas pra imprimir e usar em peças religiosas, presentes personalizados e entregas especiais.
+            </p>
+            <div class="bonus-card__cta">
+              Valor: <s>R$83</s> <strong>GRÁTIS</strong>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TESTIMONIALS ========================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section__eyebrow">Quem já tem está adorando</span>
+      <h2 class="section__title">O que dizem as bordadeiras de todo o Brasil</h2>
+
+      <div class="testimonials">
+        <article class="testimonial">
+          <div class="testimonial__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial__text">
+            "Eu cobrava R$25 pra bordar uma camisa simples. Depois que comecei a oferecer as peças religiosas, fechei encomenda de R$80 a peça pra um grupo de oração inteiro. Pagou a coleção 40 vezes só no primeiro mês."
+          </p>
+          <div class="testimonial__author">
+            <img class="testimonial__avatar"
+                 src="https://randomuser.me/api/portraits/women/65.jpg"
+                 alt="Foto de Marlene Ribeiro"
+                 loading="lazy"
+                 width="56" height="56">
+            <div class="testimonial__author-info">
+              <strong>Marlene Ribeiro</strong>
+              <span>Aparecida, SP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial__text">
+            "Confesso que comprei desconfiada, achando que ia ter desenho ruim. Mas vieram tudo certinho, abriram na minha máquina de primeira. Os bordados de Nossa Senhora ficaram lindos demais. Recomendo de olhos fechados."
+          </p>
+          <div class="testimonial__author">
+            <img class="testimonial__avatar"
+                 src="https://randomuser.me/api/portraits/women/72.jpg"
+                 alt="Foto de Cleide Almeida"
+                 loading="lazy"
+                 width="56" height="56">
+            <div class="testimonial__author-info">
+              <strong>Cleide Almeida</strong>
+              <span>Caruaru, PE</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial__text">
+            "O que mais me ajudou foi o guia de quanto cobrar. Eu sempre cobrei pouco com medo de perder cliente. Aumentei o preço, mostrei o catálogo e o pessoal da paróquia continuou comprando — agora pelo valor justo."
+          </p>
+          <div class="testimonial__author">
+            <img class="testimonial__avatar"
+                 src="https://randomuser.me/api/portraits/women/79.jpg"
+                 alt="Foto de Rosângela Pinto"
+                 loading="lazy"
+                 width="56" height="56">
+            <div class="testimonial__author-info">
+              <strong>Rosângela Pinto</strong>
+              <span>Belo Horizonte, MG</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial__text">
+            "Comprei pra fazer uns panos de altar pra capela da minha avó. Acabei virando a 'bordadeira oficial' da paróquia toda. Hoje tenho fila de espera. Foi o melhor R$15,90 que gastei na vida."
+          </p>
+          <div class="testimonial__author">
+            <img class="testimonial__avatar"
+                 src="https://randomuser.me/api/portraits/women/68.jpg"
+                 alt="Foto de Juliana Castro"
+                 loading="lazy"
+                 width="56" height="56">
+            <div class="testimonial__author-info">
+              <strong>Juliana Castro</strong>
+              <span>Caxias do Sul, RS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PRICING ========================= -->
+  <section class="section" id="comprar">
+    <div class="container">
+      <span class="section__eyebrow">Garanta a sua agora</span>
+      <h2 class="section__title">Pague <em style="color:var(--secondary)">uma única vez</em> e use para sempre</h2>
+      <p class="section__lead">
+        Sem mensalidade, sem renovação, sem letra miúda. Tudo o que você precisa pra entrar no nicho religioso por menos do que custa uma pizza.
+      </p>
+
+      <div class="pricing">
+        <article class="price-card">
+          <span class="price-card__pill-top">
+            <svg class="icon" style="width:14px;height:14px;vertical-align:-2px"><use href="#i-star"/></svg>
+            Mais vendido
+          </span>
+
+          <span class="price-card__pill-urgency">
+            <svg class="icon" style="width:12px;height:12px;vertical-align:-1px"><use href="#i-flame"/></svg>
+            Última chance — oferta termina hoje
+          </span>
+
+          <h3 class="price-card__title">Coleção Bordados da Fé</h3>
+          <p class="price-card__subtitle">130 desenhos + 3 bônus exclusivos</p>
+
+          <div class="price-card__old"><s>De R$197,00</s> por apenas</div>
+
+          <div class="price-card__main">
+            <span class="price-card__currency">R$</span>
+            <span class="price-card__value">15</span>
+            <span class="price-card__cents">,90</span>
+          </div>
+          <p class="price-card__installment">
+            ou <strong>2x de R$8,29</strong> no cartão • à vista no Pix
+          </p>
+
+          <ul class="price-card__includes">
+            <li>130 desenhos católicos digitalizados em alta densidade</li>
+            <li>Arquivos nos principais formatos (PES, DST, JEF, EXP, VP3, XXX, HUS)</li>
+            <li>Bônus 1 — Pack Cristão Premium (símbolos cristãos clássicos)</li>
+            <li>Bônus 2 — Pack Premium de Cruzes e Crucifixos</li>
+            <li>Bônus 3 — Kit de Etiquetas Religiosas (Editáveis no Canva)</li>
+            <li>Acesso imediato e vitalício (sem mensalidade)</li>
+            <li>Garantia incondicional de 7 dias</li>
+          </ul>
+
+          <a href="#" class="btn btn--cta btn--cta-large price-card__cta">
+            Quero acesso agora por R$15,90
+            <svg class="icon"><use href="#i-arrow-right"/></svg>
+          </a>
+
+          <div class="price-card__trust">
+            <span>
+              <svg class="icon" style="width:14px;height:14px;vertical-align:-2px;color:var(--cta)"><use href="#i-lock"/></svg>
+              Compra 100% segura •
+              <svg class="icon" style="width:14px;height:14px;vertical-align:-2px;color:var(--gold)"><use href="#i-bolt"/></svg>
+              Acesso liberado em até 2 minutos
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= GUARANTEE ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="guarantee">
+        <div class="guarantee__seal-wrap">
+          <svg class="guarantee__seal-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia de 7 dias">
+            <defs>
+              <linearGradient id="goldGradOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F1D27A"/>
+                <stop offset="50%" stop-color="#D4A857"/>
+                <stop offset="100%" stop-color="#B0893B"/>
+              </linearGradient>
+              <linearGradient id="creamGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" stop-color="#FFFCEF"/>
+                <stop offset="100%" stop-color="#F6EBC9"/>
+              </linearGradient>
+              <radialGradient id="goldGlow" cx="50%" cy="40%" r="60%">
+                <stop offset="50%" stop-color="#D4A857" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#8a6a1f" stop-opacity=".35"/>
+              </radialGradient>
+              <path id="topArc" d="M 30 110 A 80 80 0 0 1 190 110" fill="none"/>
+              <path id="botArc" d="M 32 117 A 78 78 0 0 0 188 117" fill="none"/>
+            </defs>
+
+            <!-- Raios externos (16 pequenos triangulos) -->
+            <g transform="translate(110 110)" fill="#B0893B">
+              <polygon points="0,-105 4,-95 -4,-95"/>
+              <g transform="rotate(22.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(45)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(67.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(90)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(112.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(135)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(157.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(180)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(202.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(225)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(247.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(270)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(292.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(315)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(337.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+            </g>
+
+            <!-- Disco principal dourado -->
+            <circle cx="110" cy="110" r="96" fill="url(#goldGradOuter)"/>
+
+            <!-- Anel claro -->
+            <circle cx="110" cy="110" r="86" fill="#F1D27A"/>
+
+            <!-- Borda decorativa pontilhada -->
+            <circle cx="110" cy="110" r="80" fill="none" stroke="#B0893B" stroke-width="1.5" stroke-dasharray="2 5"/>
+
+            <!-- Disco creme central -->
+            <circle cx="110" cy="110" r="73" fill="url(#creamGrad)" stroke="#B0893B" stroke-width="1"/>
+
+            <!-- Centro creme claro -->
+            <circle cx="110" cy="110" r="62" fill="#FFFCEF"/>
+
+            <!-- Glow overlay -->
+            <circle cx="110" cy="110" r="73" fill="url(#goldGlow)"/>
+
+            <!-- Texto arco superior -->
+            <text font-family="Inter, sans-serif" font-weight="800" font-size="13" fill="#5a4416" letter-spacing="3">
+              <textPath href="#topArc" startOffset="50%" text-anchor="middle">★ GARANTIA TOTAL ★</textPath>
+            </text>
+
+            <!-- Texto arco inferior -->
+            <text font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#5a4416" letter-spacing="4">
+              <textPath href="#botArc" startOffset="50%" text-anchor="middle">100% SATISFACAO</textPath>
+            </text>
+
+            <!-- Numero 7 -->
+            <text x="110" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="78" fill="#1E3A5F">7</text>
+
+            <!-- DIAS -->
+            <text x="110" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="14" fill="#1E3A5F" letter-spacing="6">DIAS</text>
+
+            <!-- Selo de check no topo -->
+            <g transform="translate(110, 50)">
+              <circle r="16" fill="#1E3A5F" stroke="#F1D27A" stroke-width="2.5"/>
+              <path d="M -7 0 L -2 5 L 8 -5" fill="none" stroke="#FFFCEF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="guarantee__content">
+          <span class="guarantee__eyebrow">Compra sem risco</span>
+          <h3 class="guarantee__title">Se não amar, <em>devolvemos seu dinheiro.</em> Sem perguntas.</h3>
+          <p class="guarantee__text">
+            Você tem <strong>7 dias inteiros</strong> pra abrir os arquivos, testar na sua máquina, fazer o primeiro bordado e decidir se a coleção é mesmo pra você. Se por qualquer motivo não gostar, manda um e-mail e a gente devolve <strong>100% do que você pagou</strong>.
+          </p>
+          <ul class="guarantee__list">
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              Sem perguntas, sem burocracia
+            </li>
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              Devolução processada em até 5 dias úteis
+            </li>
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              O risco é todo nosso — você só precisa testar
+            </li>
+          </ul>
+          <p class="guarantee__signature">— Equipe Bordados da Fé</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FAQ ========================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section__eyebrow">Dúvidas frequentes</span>
+      <h2 class="section__title">Antes de comprar, talvez você queira saber</h2>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary>Funciona na minha máquina de bordar?</summary>
+          <p>Sim. Você recebe os 130 desenhos nos principais formatos do mercado: PES, DST, JEF, EXP, VP3, XXX, HUS. Isso cobre praticamente todas as máquinas domésticas e a maioria das industriais. Se tiver dúvida sobre o formato do seu equipamento, manda no WhatsApp antes mesmo de comprar — a gente confirma pra você.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Como eu recebo a coleção depois de pagar?</summary>
+          <p>Na hora. Assim que o pagamento for confirmado (Pix sai em até 2 minutos), você recebe um e-mail com o link de acesso. Faz o download, salva no computador ou no pen-drive, e já pode usar. Funciona como um "pacote zip" que você baixa uma vez e fica seu pra sempre.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Posso vender os bordados que eu fizer com esses desenhos?</summary>
+          <p>Pode sim — uso comercial liberado. Você pode bordar e vender camisas, panos, lembrancinhas, peças de altar, kits de comunhão e o que mais a sua criatividade alcançar. Só não pode revender os arquivos digitais em si (porque aí seria comercializar a coleção).</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Tem alguma cobrança mensal ou anual?</summary>
+          <p>Não. Você paga R$15,90 uma única vez. Nunca mais aparece cobrança no seu cartão, não tem renovação automática, não tem assinatura. Acesso vitalício e baixa quantas vezes quiser.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>E se eu não gostar da coleção?</summary>
+          <p>Você tem 7 dias de garantia incondicional. Se por qualquer motivo a coleção não te servir, manda um e-mail e devolvemos 100% do valor pago. Sem perguntar o motivo, sem burocracia. O risco é todo nosso — você só precisa testar.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Onde tiro dúvida depois da compra?</summary>
+          <p>Direto com a gente, por WhatsApp. Você recebe o número no mesmo e-mail de acesso. Quem responde é uma pessoa de verdade, não robô. Em geral, a gente devolve em menos de 1 hora em horário comercial.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Preciso saber bordar bem pra usar?</summary>
+          <p>Não precisa ser expert. Os arquivos já estão prontos — você só carrega no software da sua máquina e manda bordar. Se nunca usou desenho pronto antes, no grupo VIP do WhatsApp tem outras bordadeiras que adoram ajudar quem está começando.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FINAL CTA ========================= -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="final-cta__title">
+        Não deixe pra amanhã o que você pode bordar <em>hoje</em>
+      </h2>
+      <p class="final-cta__text">
+        A oferta de R$15,90 termina hoje à meia-noite. Depois disso, a coleção volta pro preço normal de R$197,00. Garanta agora, baixe em 2 minutos e ainda dá tempo de fazer seu primeiro bordado religioso ainda hoje.
+      </p>
+      <p class="final-cta__price">
+        Coleção completa + 3 bônus por apenas <strong>R$15,90</strong>
+      </p>
+      <a href="#comprar" class="btn btn--cta btn--cta-large">
+        Quero garantir minha coleção agora
+        <svg class="icon"><use href="#i-arrow-right"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__brand">Bordados da Fé</p>
+      <p>
+        Contato: <a href="mailto:rovrbr@gmail.com">rovrbr@gmail.com</a>
+        &nbsp;•&nbsp; Suporte por WhatsApp após a compra
+      </p>
+      <p style="margin-top:10px">
+        © 2026 Bordados da Fé — Todos os direitos reservados.
+      </p>
+      <p class="footer__disclaimer">
+        Este site não é afiliado a nenhuma marca de máquina de bordar. Os nomes de formatos de arquivo citados (PES, DST, JEF, EXP, VP3, XXX, HUS) são padrões da indústria e pertencem aos seus respectivos detentores. Resultados de venda mencionados em depoimentos são experiências individuais e não constituem promessa de ganho.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
