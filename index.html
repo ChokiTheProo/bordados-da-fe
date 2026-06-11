@@ -10,6 +10,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Utmify Pixel -->
+  <script>
+    window.pixelId = "6a29e639fe1f5b7c32cb7ad8";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- Utmify UTM tracker -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
 </head>
 <body>
 
@@ -231,13 +250,12 @@
 
       <!-- Capa do produto -->
       <div class="hero__mockup" aria-label="Coleção Bordados da Fé — capa do produto">
-        <img class="hero__mockup-img" src="capa-produto.png" alt="Caixa premium da Coleção +130 Bordados Católicos com tablet mostrando os desenhos e amostra bordada" loading="eager" width="540">
-        <div class="hero__mockup-glow" aria-hidden="true"></div>
+        <img class="hero__mockup-img" src="capa-produto.png" alt="Caixa premium da Coleção +130 Bordados Católicos com tablet mostrando os desenhos e amostra bordada" loading="eager" width="580">
       </div>
 
       <div class="hero__cta-wrap">
         <a href="#comprar" class="btn btn--cta btn--cta-large">
-          Quero minha coleção por R$15,90
+          Quero minha coleção agora
           <svg class="icon"><use href="#i-arrow-right"/></svg>
         </a>
         <p class="hero__microcopy">
@@ -384,15 +402,12 @@
 
         <!-- ===== BÔNUS 1 ===== -->
         <article class="bonus-card">
-          <div class="bonus-card__cover bonus-card__cover--1">
+          <div class="bonus-card__cover">
             <span class="bonus-card__badge">
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 1
             </span>
-            <div class="bonus-card__center">
-              <svg class="bonus-card__bigicon"><use href="#i-cross"/></svg>
-              <span class="bonus-card__cover-label">Pack Cristão<br>Premium</span>
-            </div>
+            <img class="bonus-card__img" src="bonus1.png" alt="Pack Cristão Premium" loading="lazy">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Pack Cristão Premium</h3>
@@ -407,19 +422,12 @@
 
         <!-- ===== BÔNUS 2 ===== -->
         <article class="bonus-card">
-          <div class="bonus-card__cover bonus-card__cover--2">
+          <div class="bonus-card__cover">
             <span class="bonus-card__badge">
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 2
             </span>
-            <div class="bonus-card__center">
-              <div class="bonus-card__multi">
-                <svg><use href="#i-cross"/></svg>
-                <svg><use href="#i-cross"/></svg>
-                <svg><use href="#i-cross"/></svg>
-              </div>
-              <span class="bonus-card__cover-label">Cruzes &amp;<br>Crucifixos</span>
-            </div>
+            <img class="bonus-card__img" src="bonus2.png" alt="Pack Premium de Cruzes e Crucifixos" loading="lazy">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Pack Premium de Cruzes e Crucifixos</h3>
@@ -434,15 +442,12 @@
 
         <!-- ===== BÔNUS 3 ===== -->
         <article class="bonus-card">
-          <div class="bonus-card__cover bonus-card__cover--3">
+          <div class="bonus-card__cover">
             <span class="bonus-card__badge">
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 3
             </span>
-            <div class="bonus-card__center">
-              <svg class="bonus-card__bigicon"><use href="#i-tag"/></svg>
-              <span class="bonus-card__cover-label">Etiquetas<br>Religiosas</span>
-            </div>
+            <img class="bonus-card__img" src="bonus3.png" alt="Kit de Etiquetas Religiosas (Editáveis no Canva)" loading="lazy">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Kit de Etiquetas Religiosas (Editáveis no Canva)</h3>
@@ -562,6 +567,8 @@
             Última chance — oferta termina hoje
           </span>
 
+          <img class="price-card__cover" src="capa-produto.png" alt="Coleção Bordados da Fé — caixa premium" loading="lazy">
+
           <h3 class="price-card__title">Coleção Bordados da Fé</h3>
           <p class="price-card__subtitle">130 desenhos + 3 bônus exclusivos</p>
 
@@ -587,7 +594,7 @@
           </ul>
 
           <a href="#" class="btn btn--cta btn--cta-large price-card__cta">
-            Quero acesso agora por R$15,90
+            Comprar agora
             <svg class="icon"><use href="#i-arrow-right"/></svg>
           </a>
 
