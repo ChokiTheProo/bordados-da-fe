@@ -609,103 +609,111 @@
   <!-- ========================= GUARANTEE ========================= -->
   <section class="section">
     <div class="container">
-      <div class="guarantee">
-        <div class="guarantee__seal-wrap">
-          <svg class="guarantee__seal-svg" viewBox="0 0 240 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia incondicional de 7 dias">
+      <div class="guarantee-card">
+
+        <!-- Selo central -->
+        <div class="guarantee-seal-wrap">
+          <svg class="guarantee-seal" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia de 7 dias">
             <defs>
-              <radialGradient id="goldStar" cx="35%" cy="28%" r="80%">
-                <stop offset="0%" stop-color="#FFEC9C"/>
-                <stop offset="50%" stop-color="#E0A813"/>
-                <stop offset="100%" stop-color="#7A5200"/>
+              <radialGradient id="sealGreen" cx="35%" cy="28%" r="80%">
+                <stop offset="0%" stop-color="#34D87F"/>
+                <stop offset="55%" stop-color="#15803D"/>
+                <stop offset="100%" stop-color="#0A4220"/>
               </radialGradient>
-              <radialGradient id="goldCenter" cx="38%" cy="26%" r="85%">
-                <stop offset="0%" stop-color="#FFF4B8"/>
-                <stop offset="55%" stop-color="#F0B91A"/>
-                <stop offset="100%" stop-color="#8B5E00"/>
-              </radialGradient>
-              <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#2a2a2a"/>
-                <stop offset="50%" stop-color="#0a0a0a"/>
-                <stop offset="100%" stop-color="#2a2a2a"/>
+              <linearGradient id="sealGoldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE48A"/>
+                <stop offset="50%" stop-color="#D4A857"/>
+                <stop offset="100%" stop-color="#A87000"/>
               </linearGradient>
-              <path id="seal-top" d="M 39 120 A 81 81 0 0 1 201 120" fill="none"/>
-              <path id="seal-bot" d="M 35 120 A 85 85 0 0 0 205 120" fill="none"/>
+              <path id="sealArcTop" d="M 45 120 A 75 75 0 0 1 195 120" fill="none"/>
+              <path id="sealArcBot" d="M 40 120 A 80 80 0 0 0 200 120" fill="none"/>
             </defs>
 
-            <!-- Estrela serrilhada de 24 pontas -->
-            <g transform="translate(120 120)">
-              <polygon fill="url(#goldStar)" points="0,-110 13,-97 28,-106 37,-91 55,-95 60,-78 78,-78 78,-60 95,-55 91,-37 106,-28 97,-13 110,0 97,13 106,28 91,37 95,55 78,60 78,78 60,78 55,95 37,91 28,106 13,97 0,110 -13,97 -28,106 -37,91 -55,95 -60,78 -78,78 -78,60 -95,55 -91,37 -106,28 -97,13 -110,0 -97,-13 -106,-28 -91,-37 -95,-55 -78,-60 -78,-78 -60,-78 -55,-95 -37,-91 -28,-106 -13,-97"/>
-            </g>
+            <!-- Anel dourado externo -->
+            <circle cx="120" cy="120" r="116" fill="url(#sealGoldRing)"/>
 
-            <!-- Anel preto -->
-            <circle cx="120" cy="120" r="92" fill="#0a0a0a"/>
+            <!-- Espaço branco entre dourado e verde -->
+            <circle cx="120" cy="120" r="108" fill="#ffffff"/>
 
-            <!-- Linha decorativa dourada interna -->
-            <circle cx="120" cy="120" r="88" fill="none" stroke="#FFD55C" stroke-width="0.6" opacity=".5"/>
+            <!-- Disco verde principal -->
+            <circle cx="120" cy="120" r="104" fill="url(#sealGreen)"/>
 
-            <!-- Centro dourado -->
-            <circle cx="120" cy="120" r="78" fill="url(#goldCenter)"/>
+            <!-- Anel decorativo dourado interno -->
+            <circle cx="120" cy="120" r="96" fill="none" stroke="#FFD55C" stroke-width="1.5" opacity=".75"/>
+            <circle cx="120" cy="120" r="91" fill="none" stroke="#FFD55C" stroke-width="0.6" opacity=".4"/>
 
-            <!-- Highlight 3D no canto superior -->
-            <ellipse cx="100" cy="100" rx="38" ry="24" fill="#FFF4B8" opacity=".28"/>
+            <!-- Highlight 3D (reflexo de luz) -->
+            <ellipse cx="100" cy="90" rx="42" ry="26" fill="#FFFFFF" opacity=".18"/>
 
-            <!-- Texto arco superior -->
-            <text font-family="Inter, sans-serif" font-weight="900" font-size="11" fill="#FFD55C" letter-spacing="2.5">
-              <textPath href="#seal-top" startOffset="50%" text-anchor="middle">GARANTIA INCONDICIONAL</textPath>
+            <!-- Arco superior: "GARANTIA DE" -->
+            <text font-family="Inter, sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" letter-spacing="4">
+              <textPath href="#sealArcTop" startOffset="50%" text-anchor="middle">GARANTIA DE</textPath>
             </text>
 
-            <!-- Texto arco inferior -->
-            <text font-family="Inter, sans-serif" font-weight="700" font-size="9.5" fill="#FFD55C" letter-spacing="2.5">
-              <textPath href="#seal-bot" startOffset="50%" text-anchor="middle">★ SEU DINHEIRO DE VOLTA ★</textPath>
+            <!-- Arco inferior: "★ 100% SATISFAÇÃO ★" -->
+            <text font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#FFD55C" letter-spacing="3">
+              <textPath href="#sealArcBot" startOffset="50%" text-anchor="middle">★  100% SATISFAÇÃO  ★</textPath>
             </text>
 
-            <!-- "7" -->
-            <text x="120" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="74" fill="#0a0a0a">7</text>
+            <!-- "7" gigante -->
+            <text x="120" y="142" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="78" fill="#FFFFFF">7</text>
 
-            <!-- DIAS -->
-            <text x="120" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="13" fill="#0a0a0a" letter-spacing="5">DIAS</text>
+            <!-- "DIAS" abaixo -->
+            <text x="120" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="14" fill="#FFD55C" letter-spacing="6">DIAS</text>
 
-            <!-- Fita "DE GARANTIA" abaixo -->
-            <g transform="translate(120 245)">
-              <!-- Cauda esquerda (fishtail) -->
-              <path d="M -100 -18 L -118 -18 L -107 0 L -118 18 L -100 18 Z" fill="#1a1a1a"/>
-              <!-- Cauda direita -->
-              <path d="M 100 -18 L 118 -18 L 107 0 L 118 18 L 100 18 Z" fill="#1a1a1a"/>
-              <!-- Corpo principal -->
-              <rect x="-100" y="-22" width="200" height="44" fill="url(#ribbonGrad)"/>
-              <!-- Sombras de dobra (efeito de "papel dobrado") -->
-              <path d="M -100 -22 L -100 -18 L -108 -8 Z" fill="rgba(0,0,0,.60)"/>
-              <path d="M -100 22 L -100 18 L -108 8 Z" fill="rgba(0,0,0,.60)"/>
-              <path d="M 100 -22 L 100 -18 L 108 -8 Z" fill="rgba(0,0,0,.60)"/>
-              <path d="M 100 22 L 100 18 L 108 8 Z" fill="rgba(0,0,0,.60)"/>
-              <!-- Texto -->
-              <text x="0" y="6" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="17" fill="#FFD55C" letter-spacing="4">DE GARANTIA</text>
+            <!-- Mini badge dourado com check no topo -->
+            <g transform="translate(120 54)">
+              <circle r="15" fill="#FFD55C" stroke="#15803D" stroke-width="2"/>
+              <path d="M -7 0 L -2 5 L 8 -5" stroke="#15803D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
           </svg>
         </div>
 
-        <div class="guarantee__content">
-          <span class="guarantee__eyebrow">Sem risco</span>
-          <h3 class="guarantee__title">Garantia de <em>7 dias</em> — Zero risco pra você</h3>
-          <p class="guarantee__text">
-            Você não precisa decidir no escuro. Após a compra, você terá <strong>7 dias</strong> pra abrir os arquivos, visualizar a coleção, testar na sua máquina e conhecer todo o material disponível. Se por qualquer motivo sentir que não é pra você, basta solicitar o reembolso dentro do prazo.
+        <!-- Frase em pílula verde abaixo do selo -->
+        <p class="guarantee-microline">
+          <svg class="icon"><use href="#i-shield-check"/></svg>
+          Compra protegida
+          <span class="dot">•</span>
+          Reembolso de 100% do valor pago
+          <span class="dot">•</span>
+          Garantia de satisfação
+        </p>
+
+        <!-- Eyebrow + título -->
+        <span class="guarantee-eyebrow">Sem risco nenhum</span>
+        <h2 class="guarantee-title">
+          Risco <em>zero</em> para você
+        </h2>
+
+        <!-- Caixa de destaque -->
+        <div class="guarantee-callout">
+          <svg class="guarantee-callout-icon"><use href="#i-shield-check"/></svg>
+          <p>
+            Você tem <strong>7 dias</strong> para experimentar todo o conteúdo. Se por qualquer motivo não ficar satisfeito, basta solicitar o reembolso e devolveremos <strong>100% do valor investido</strong>. Sem burocracia e sem riscos.
           </p>
-          <ul class="guarantee__list">
-            <li>
-              <svg class="icon icon-check"><use href="#i-check"/></svg>
-              Sem burocracia
-            </li>
-            <li>
-              <svg class="icon icon-check"><use href="#i-check"/></svg>
-              Sem complicação
-            </li>
-            <li>
-              <svg class="icon icon-check"><use href="#i-check"/></svg>
-              Você decide, sem precisar explicar nada
-            </li>
-          </ul>
-          <p class="guarantee__signature">— Equipe Bordados da Fé</p>
         </div>
+
+        <!-- Trio de garantias -->
+        <div class="guarantee-trio">
+          <div class="guarantee-trio-item">
+            <div class="guarantee-trio-icon"><svg><use href="#i-shield-check"/></svg></div>
+            <h4>Compra Protegida</h4>
+            <p>Pagamento criptografado e seguro</p>
+          </div>
+          <div class="guarantee-trio-item">
+            <div class="guarantee-trio-icon"><svg><use href="#i-check"/></svg></div>
+            <h4>Sem Burocracia</h4>
+            <p>Reembolso sem perguntas</p>
+          </div>
+          <div class="guarantee-trio-item">
+            <div class="guarantee-trio-icon"><svg><use href="#i-coins"/></svg></div>
+            <h4>100% Devolvido</h4>
+            <p>O valor integral de volta</p>
+          </div>
+        </div>
+
+        <p class="guarantee-signature">— Equipe Bordados da Fé</p>
+
       </div>
     </div>
   </section>
