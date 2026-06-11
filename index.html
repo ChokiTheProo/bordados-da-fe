@@ -609,111 +609,111 @@
   <!-- ========================= GUARANTEE ========================= -->
   <section class="section">
     <div class="container">
-      <div class="guarantee-card">
-
-        <!-- Selo central -->
-        <div class="guarantee-seal-wrap">
-          <svg class="guarantee-seal" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia de 7 dias">
+      <div class="guarantee">
+        <div class="guarantee__seal-wrap">
+          <svg class="guarantee__seal-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia de 7 dias">
             <defs>
-              <radialGradient id="sealGreen" cx="35%" cy="28%" r="80%">
-                <stop offset="0%" stop-color="#34D87F"/>
-                <stop offset="55%" stop-color="#15803D"/>
-                <stop offset="100%" stop-color="#0A4220"/>
-              </radialGradient>
-              <linearGradient id="sealGoldRing" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FFE48A"/>
+              <linearGradient id="goldGradOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F1D27A"/>
                 <stop offset="50%" stop-color="#D4A857"/>
-                <stop offset="100%" stop-color="#A87000"/>
+                <stop offset="100%" stop-color="#B0893B"/>
               </linearGradient>
-              <path id="sealArcTop" d="M 45 120 A 75 75 0 0 1 195 120" fill="none"/>
-              <path id="sealArcBot" d="M 40 120 A 80 80 0 0 0 200 120" fill="none"/>
+              <linearGradient id="creamGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" stop-color="#FFFCEF"/>
+                <stop offset="100%" stop-color="#F6EBC9"/>
+              </linearGradient>
+              <radialGradient id="goldGlow" cx="50%" cy="40%" r="60%">
+                <stop offset="50%" stop-color="#D4A857" stop-opacity="0"/>
+                <stop offset="100%" stop-color="#8a6a1f" stop-opacity=".35"/>
+              </radialGradient>
+              <path id="topArc" d="M 30 110 A 80 80 0 0 1 190 110" fill="none"/>
+              <path id="botArc" d="M 32 117 A 78 78 0 0 0 188 117" fill="none"/>
             </defs>
 
-            <!-- Anel dourado externo -->
-            <circle cx="120" cy="120" r="116" fill="url(#sealGoldRing)"/>
+            <!-- Raios externos (16 pequenos triangulos) -->
+            <g transform="translate(110 110)" fill="#B0893B">
+              <polygon points="0,-105 4,-95 -4,-95"/>
+              <g transform="rotate(22.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(45)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(67.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(90)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(112.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(135)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(157.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(180)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(202.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(225)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(247.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(270)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(292.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(315)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+              <g transform="rotate(337.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+            </g>
 
-            <!-- Espaço branco entre dourado e verde -->
-            <circle cx="120" cy="120" r="108" fill="#ffffff"/>
+            <!-- Disco principal dourado -->
+            <circle cx="110" cy="110" r="96" fill="url(#goldGradOuter)"/>
 
-            <!-- Disco verde principal -->
-            <circle cx="120" cy="120" r="104" fill="url(#sealGreen)"/>
+            <!-- Anel claro -->
+            <circle cx="110" cy="110" r="86" fill="#F1D27A"/>
 
-            <!-- Anel decorativo dourado interno -->
-            <circle cx="120" cy="120" r="96" fill="none" stroke="#FFD55C" stroke-width="1.5" opacity=".75"/>
-            <circle cx="120" cy="120" r="91" fill="none" stroke="#FFD55C" stroke-width="0.6" opacity=".4"/>
+            <!-- Borda decorativa pontilhada -->
+            <circle cx="110" cy="110" r="80" fill="none" stroke="#B0893B" stroke-width="1.5" stroke-dasharray="2 5"/>
 
-            <!-- Highlight 3D (reflexo de luz) -->
-            <ellipse cx="100" cy="90" rx="42" ry="26" fill="#FFFFFF" opacity=".18"/>
+            <!-- Disco creme central -->
+            <circle cx="110" cy="110" r="73" fill="url(#creamGrad)" stroke="#B0893B" stroke-width="1"/>
 
-            <!-- Arco superior: "GARANTIA DE" -->
-            <text font-family="Inter, sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" letter-spacing="4">
-              <textPath href="#sealArcTop" startOffset="50%" text-anchor="middle">GARANTIA DE</textPath>
+            <!-- Centro creme claro -->
+            <circle cx="110" cy="110" r="62" fill="#FFFCEF"/>
+
+            <!-- Glow overlay -->
+            <circle cx="110" cy="110" r="73" fill="url(#goldGlow)"/>
+
+            <!-- Texto arco superior -->
+            <text font-family="Inter, sans-serif" font-weight="800" font-size="13" fill="#5a4416" letter-spacing="3">
+              <textPath href="#topArc" startOffset="50%" text-anchor="middle">★ GARANTIA TOTAL ★</textPath>
             </text>
 
-            <!-- Arco inferior: "★ 100% SATISFAÇÃO ★" -->
-            <text font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#FFD55C" letter-spacing="3">
-              <textPath href="#sealArcBot" startOffset="50%" text-anchor="middle">★  100% SATISFAÇÃO  ★</textPath>
+            <!-- Texto arco inferior -->
+            <text font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#5a4416" letter-spacing="4">
+              <textPath href="#botArc" startOffset="50%" text-anchor="middle">100% SATISFACAO</textPath>
             </text>
 
-            <!-- "7" gigante -->
-            <text x="120" y="142" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="78" fill="#FFFFFF">7</text>
+            <!-- Numero 7 -->
+            <text x="110" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="78" fill="#1E3A5F">7</text>
 
-            <!-- "DIAS" abaixo -->
-            <text x="120" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="14" fill="#FFD55C" letter-spacing="6">DIAS</text>
+            <!-- DIAS -->
+            <text x="110" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="14" fill="#1E3A5F" letter-spacing="6">DIAS</text>
 
-            <!-- Mini badge dourado com check no topo -->
-            <g transform="translate(120 54)">
-              <circle r="15" fill="#FFD55C" stroke="#15803D" stroke-width="2"/>
-              <path d="M -7 0 L -2 5 L 8 -5" stroke="#15803D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Selo de check no topo -->
+            <g transform="translate(110, 50)">
+              <circle r="16" fill="#1E3A5F" stroke="#F1D27A" stroke-width="2.5"/>
+              <path d="M -7 0 L -2 5 L 8 -5" fill="none" stroke="#FFFCEF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
           </svg>
         </div>
 
-        <!-- Frase em pílula verde abaixo do selo -->
-        <p class="guarantee-microline">
-          <svg class="icon"><use href="#i-shield-check"/></svg>
-          Compra protegida
-          <span class="dot">•</span>
-          Reembolso de 100% do valor pago
-          <span class="dot">•</span>
-          Garantia de satisfação
-        </p>
-
-        <!-- Eyebrow + título -->
-        <span class="guarantee-eyebrow">Garantia oficial certificada</span>
-        <h2 class="guarantee-title">
-          Risco <em>ZERO</em> para você
-        </h2>
-
-        <!-- Caixa de destaque -->
-        <div class="guarantee-callout">
-          <svg class="guarantee-callout-icon"><use href="#i-shield-check"/></svg>
-          <p>
-            Você tem <strong>7 dias</strong> para experimentar todo o conteúdo. Se por qualquer motivo não ficar satisfeito, basta solicitar o reembolso e devolveremos <strong>100% do valor investido</strong>. Sem burocracia e sem riscos.
+        <div class="guarantee__content">
+          <span class="guarantee__eyebrow">Compra sem risco</span>
+          <h3 class="guarantee__title">Se não amar, <em>devolvemos seu dinheiro.</em> Sem perguntas.</h3>
+          <p class="guarantee__text">
+            Você tem <strong>7 dias inteiros</strong> pra abrir os arquivos, testar na sua máquina, fazer o primeiro bordado e decidir se a coleção é mesmo pra você. Se por qualquer motivo não gostar, manda um e-mail e a gente devolve <strong>100% do que você pagou</strong>.
           </p>
+          <ul class="guarantee__list">
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              Sem perguntas, sem burocracia
+            </li>
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              Devolução processada em até 5 dias úteis
+            </li>
+            <li>
+              <svg class="icon icon-check"><use href="#i-check"/></svg>
+              O risco é todo nosso — você só precisa testar
+            </li>
+          </ul>
+          <p class="guarantee__signature">— Equipe Bordados da Fé</p>
         </div>
-
-        <!-- Trio de garantias -->
-        <div class="guarantee-trio">
-          <div class="guarantee-trio-item">
-            <div class="guarantee-trio-icon"><svg><use href="#i-shield-check"/></svg></div>
-            <h4>Compra Protegida</h4>
-            <p>Pagamento criptografado e seguro</p>
-          </div>
-          <div class="guarantee-trio-item">
-            <div class="guarantee-trio-icon"><svg><use href="#i-check"/></svg></div>
-            <h4>Sem Burocracia</h4>
-            <p>Reembolso sem perguntas</p>
-          </div>
-          <div class="guarantee-trio-item">
-            <div class="guarantee-trio-icon"><svg><use href="#i-coins"/></svg></div>
-            <h4>100% Devolvido</h4>
-            <p>O valor integral de volta</p>
-          </div>
-        </div>
-
-        <p class="guarantee-signature">— Equipe Bordados da Fé</p>
-
       </div>
     </div>
   </section>

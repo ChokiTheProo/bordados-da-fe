@@ -1045,252 +1045,130 @@ button{
   border:1px solid #e5e5e5;
 }
 
-/* ---------- GUARANTEE (premium oficial) ---------- */
-.guarantee-card{
-  max-width:840px;
-  margin:0 auto;
-  background:#fff;
+/* ---------- GUARANTEE ---------- */
+.guarantee{
+  background:linear-gradient(135deg, #FFFCEF 0%, #fff 50%, var(--background) 100%);
+  border:none;
   border-radius:24px;
-  padding:64px 48px 52px;
-  text-align:center;
+  padding:56px 48px;
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:48px;
+  align-items:center;
+  max-width:1000px;
+  margin:0 auto;
+  box-shadow:0 20px 60px rgba(176,137,59,.18), 0 4px 12px rgba(30,58,95,.08);
   position:relative;
   overflow:hidden;
-  border:1px solid rgba(201,162,74,.30);
-  box-shadow:
-    0 30px 80px rgba(22,163,74,.10),
-    0 8px 24px rgba(21,38,63,.08);
 }
 
-.guarantee-card::before,
-.guarantee-card::after{
+.guarantee::before{
   content:"";
   position:absolute;
-  left:0;
-  right:0;
-  height:5px;
-  background:linear-gradient(90deg, transparent 0%, var(--gold) 22%, #F1D27A 50%, var(--gold) 78%, transparent 100%);
+  inset:0 0 auto 0;
+  height:6px;
+  background:linear-gradient(90deg, transparent 0%, var(--gold) 20%, #F1D27A 50%, var(--gold) 80%, transparent 100%);
 }
-.guarantee-card::before{ top:0; }
-.guarantee-card::after{ bottom:0; }
 
-.guarantee-seal-wrap{
+.guarantee::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:6px;
+  background:linear-gradient(90deg, transparent 0%, var(--gold) 20%, #F1D27A 50%, var(--gold) 80%, transparent 100%);
+}
+
+.guarantee__seal-wrap{
   display:flex;
+  align-items:center;
   justify-content:center;
+  position:relative;
+}
+
+.guarantee__seal-svg{
+  width:220px;
+  height:220px;
+  filter:drop-shadow(0 12px 24px rgba(176,137,59,.35));
+  animation:sealFloat 4s ease-in-out infinite;
+}
+
+@keyframes sealFloat{
+  0%, 100%{ transform:translateY(0) rotate(-2deg); }
+  50%{ transform:translateY(-6px) rotate(2deg); }
+}
+
+.guarantee__eyebrow{
+  display:inline-block;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:800;
+  color:#8a6a1f;
+  margin-bottom:14px;
+  padding:6px 14px;
+  background:rgba(201,162,74,.15);
+  border:1px solid rgba(201,162,74,.30);
+  border-radius:6px;
+}
+
+.guarantee__title{
+  font-size:32px;
+  font-weight:800;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:16px;
+  line-height:1.15;
+  letter-spacing:-0.5px;
+}
+
+.guarantee__title em{
+  font-style:normal;
+  color:var(--gold);
+}
+
+.guarantee__text{
+  font-size:17px;
+  line-height:1.6;
+  color:var(--text-body);
   margin-bottom:20px;
 }
 
-.guarantee-seal{
-  width:200px;
-  height:200px;
-  filter:drop-shadow(0 18px 36px rgba(22,163,74,.32));
-}
+.guarantee__text strong{ color:var(--primary); }
 
-.guarantee-microline{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  font-size:13px;
-  font-weight:700;
-  color:#0f3d22;
-  background:#fff;
-  border:2px solid rgba(22,163,74,.35);
-  padding:11px 22px;
-  border-radius:9999px;
-  margin-bottom:36px;
-  flex-wrap:wrap;
-  letter-spacing:.2px;
-  box-shadow:
-    0 4px 14px rgba(22,163,74,.12),
-    inset 0 1px 0 rgba(255,255,255,.8);
-}
-
-.guarantee-microline .icon{
-  width:16px;
-  height:16px;
-  color:var(--cta);
-}
-
-.guarantee-microline .dot{
-  color:var(--gold);
-  font-weight:900;
-  opacity:.8;
-}
-
-.guarantee-eyebrow{
-  display:inline-block;
-  text-transform:uppercase;
-  letter-spacing:3.5px;
-  font-size:12px;
-  font-weight:800;
-  color:var(--cta);
-  margin-bottom:14px;
-}
-
-.guarantee-title{
-  font-size:40px;
-  font-weight:800;
-  text-transform:uppercase;
-  color:var(--primary);
-  line-height:1.08;
-  letter-spacing:-0.8px;
-  margin-bottom:30px;
-}
-
-.guarantee-title em{
-  font-style:normal;
-  color:var(--gold);
-  font-weight:900;
-}
-
-.guarantee-callout{
-  background:#fff;
-  border:2px solid var(--cta);
-  border-radius:18px;
-  padding:34px 30px 28px;
-  display:grid;
-  grid-template-columns:auto 1fr;
-  gap:22px;
-  align-items:flex-start;
-  text-align:left;
-  margin:14px auto 40px;
-  max-width:720px;
-  box-shadow:
-    0 0 0 6px rgba(22,163,74,.08),
-    0 16px 36px rgba(22,163,74,.12);
-  position:relative;
-}
-
-.guarantee-callout::before{
-  content:"POLÍTICA OFICIAL DE REEMBOLSO";
-  position:absolute;
-  top:-14px;
-  left:50%;
-  transform:translateX(-50%);
-  background:var(--cta);
-  color:#fff;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:1.8px;
-  padding:6px 18px;
-  border-radius:8px;
-  text-transform:uppercase;
-  box-shadow:0 6px 14px rgba(22,163,74,.30);
-  white-space:nowrap;
-}
-
-.guarantee-callout-icon{
-  width:64px;
-  height:64px;
-  flex-shrink:0;
-  background:linear-gradient(135deg, var(--cta) 0%, var(--cta-hover) 100%);
-  color:#fff;
-  border-radius:14px;
-  padding:14px;
-  box-shadow:
-    0 10px 22px rgba(22,163,74,.42),
-    inset 0 1px 0 rgba(255,255,255,.25);
-}
-
-.guarantee-callout p{
-  font-size:16px;
-  line-height:1.65;
-  color:var(--text);
-  margin:0;
-  font-weight:500;
-}
-
-.guarantee-callout strong{ color:var(--cta); font-weight:800; }
-
-.guarantee-trio{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:16px;
-  max-width:720px;
-  margin:0 auto;
-}
-
-.guarantee-trio-item{
-  background:linear-gradient(180deg, #fff 0%, #F0FBF4 100%);
-  border:1.5px solid rgba(22,163,74,.22);
-  border-radius:14px;
-  padding:24px 16px 20px;
+.guarantee__list{
+  list-style:none;
+  padding:0;
+  margin:0 0 24px;
   display:flex;
   flex-direction:column;
-  align-items:center;
   gap:10px;
-  text-align:center;
-  position:relative;
-  box-shadow:0 4px 14px rgba(22,163,74,.06);
-  transition:transform .2s ease, box-shadow .2s ease;
 }
 
-.guarantee-trio-item:hover{
-  transform:translateY(-3px);
-  box-shadow:0 12px 26px rgba(22,163,74,.14);
-}
-
-.guarantee-trio-item::after{
-  content:"✓";
-  position:absolute;
-  top:10px;
-  right:10px;
-  width:18px;
-  height:18px;
-  border-radius:50%;
-  background:var(--cta);
-  color:#fff;
-  font-size:11px;
-  font-weight:900;
+.guarantee__list li{
   display:flex;
   align-items:center;
-  justify-content:center;
-  line-height:1;
-  padding-bottom:1px;
+  gap:12px;
+  font-size:16px;
+  font-weight:600;
+  color:var(--text);
 }
 
-.guarantee-trio-icon{
-  width:52px;
-  height:52px;
-  border-radius:50%;
-  background:linear-gradient(135deg, var(--cta) 0%, var(--cta-hover) 100%);
+.guarantee__list .icon-check{
+  width:24px; height:24px;
+  background:var(--success);
   color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:
-    0 6px 16px rgba(22,163,74,.30),
-    inset 0 1px 0 rgba(255,255,255,.20);
+  border-radius:50%;
+  padding:5px;
+  flex-shrink:0;
 }
 
-.guarantee-trio-icon svg{
-  width:24px;
-  height:24px;
-}
-
-.guarantee-trio-item h4{
-  font-size:13px;
-  font-weight:800;
-  color:var(--primary);
-  text-transform:uppercase;
-  letter-spacing:.5px;
-  margin:8px 0 2px;
-}
-
-.guarantee-trio-item p{
-  font-size:13px;
-  color:var(--text-muted);
-  line-height:1.45;
-  margin:0;
-}
-
-.guarantee-signature{
-  margin-top:34px;
+.guarantee__signature{
   font-family:var(--font-display);
   font-style:italic;
   font-weight:700;
   font-size:16px;
   color:var(--gold);
+  margin-top:8px;
 }
 
 /* ---------- FAQ ---------- */
@@ -1471,21 +1349,15 @@ button{
   .price-card{ padding:40px 22px 28px; }
   .price-card__value{ font-size:60px; }
 
-  .guarantee-card{ padding:48px 22px 36px; border-radius:18px; }
-  .guarantee-seal{ width:160px; height:160px; }
-  .guarantee-microline{ font-size:11px; padding:7px 16px; gap:6px; margin-bottom:28px; }
-  .guarantee-title{ font-size:28px; letter-spacing:-0.4px; }
-  .guarantee-callout{
+  .guarantee{
     grid-template-columns:1fr;
-    gap:16px;
     text-align:center;
-    padding:24px 22px;
+    padding:40px 24px;
+    gap:24px;
   }
-  .guarantee-callout-icon{ margin:0 auto; }
-  .guarantee-trio{ grid-template-columns:1fr; gap:18px; max-width:360px; }
-  .guarantee-trio-item{ flex-direction:row; text-align:left; gap:14px; }
-  .guarantee-trio-icon{ flex-shrink:0; }
-  .guarantee-trio-item h4{ margin:0; }
+  .guarantee__seal-svg{ width:180px; height:180px; }
+  .guarantee__list li{ justify-content:center; }
+  .guarantee__title{ font-size:24px; }
 
   .final-cta{ padding:56px 0; }
   .final-cta__title{ font-size:28px; }
