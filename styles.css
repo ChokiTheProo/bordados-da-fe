@@ -228,22 +228,6 @@ button{
   margin:48px auto 40px;
   width:100%;
   max-width:580px;
-  border-radius:22px;
-  overflow:hidden;
-  position:relative;
-  box-shadow:
-    0 40px 80px rgba(21,38,63,.28),
-    0 12px 30px rgba(0,0,0,.12),
-    0 0 0 1px rgba(201,162,74,.25);
-  transition:transform .35s ease, box-shadow .35s ease;
-}
-
-.hero__mockup:hover{
-  transform:translateY(-4px);
-  box-shadow:
-    0 50px 100px rgba(21,38,63,.32),
-    0 16px 40px rgba(0,0,0,.16),
-    0 0 0 1px rgba(201,162,74,.30);
 }
 
 .hero__mockup-img{
@@ -1063,10 +1047,10 @@ button{
   border-radius:24px;
   padding:56px 48px;
   display:grid;
-  grid-template-columns:220px 1fr;
+  grid-template-columns:280px 1fr;
   gap:48px;
   align-items:center;
-  max-width:1000px;
+  max-width:1040px;
   margin:0 auto;
   box-shadow:0 20px 60px rgba(176,137,59,.18), 0 4px 12px rgba(30,58,95,.08);
   position:relative;
@@ -1097,15 +1081,9 @@ button{
 }
 
 .guarantee__seal-svg{
-  width:220px;
-  height:220px;
-  filter:drop-shadow(0 12px 24px rgba(176,137,59,.35));
-  animation:sealFloat 4s ease-in-out infinite;
-}
-
-@keyframes sealFloat{
-  0%, 100%{ transform:translateY(0) rotate(-2deg); }
-  50%{ transform:translateY(-6px) rotate(2deg); }
+  width:260px;
+  height:auto;
+  filter:drop-shadow(0 16px 30px rgba(0,0,0,.30));
 }
 
 .guarantee__eyebrow{

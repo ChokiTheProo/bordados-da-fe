@@ -562,11 +562,6 @@
             Mais vendido
           </span>
 
-          <span class="price-card__pill-urgency">
-            <svg class="icon" style="width:12px;height:12px;vertical-align:-1px"><use href="#i-flame"/></svg>
-            Última chance — oferta termina hoje
-          </span>
-
           <img class="price-card__cover" src="capa-produto.png" alt="Coleção Bordados da Fé — caixa premium" loading="lazy">
 
           <h3 class="price-card__title">Coleção Bordados da Fé</h3>
@@ -616,105 +611,97 @@
     <div class="container">
       <div class="guarantee">
         <div class="guarantee__seal-wrap">
-          <svg class="guarantee__seal-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia de 7 dias">
+          <svg class="guarantee__seal-svg" viewBox="0 0 240 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selo de garantia incondicional de 7 dias">
             <defs>
-              <linearGradient id="goldGradOuter" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#F1D27A"/>
-                <stop offset="50%" stop-color="#D4A857"/>
-                <stop offset="100%" stop-color="#B0893B"/>
-              </linearGradient>
-              <linearGradient id="creamGrad" x1="50%" y1="0%" x2="50%" y2="100%">
-                <stop offset="0%" stop-color="#FFFCEF"/>
-                <stop offset="100%" stop-color="#F6EBC9"/>
-              </linearGradient>
-              <radialGradient id="goldGlow" cx="50%" cy="40%" r="60%">
-                <stop offset="50%" stop-color="#D4A857" stop-opacity="0"/>
-                <stop offset="100%" stop-color="#8a6a1f" stop-opacity=".35"/>
+              <radialGradient id="goldStar" cx="35%" cy="28%" r="80%">
+                <stop offset="0%" stop-color="#FFEC9C"/>
+                <stop offset="50%" stop-color="#E0A813"/>
+                <stop offset="100%" stop-color="#7A5200"/>
               </radialGradient>
-              <path id="topArc" d="M 30 110 A 80 80 0 0 1 190 110" fill="none"/>
-              <path id="botArc" d="M 32 117 A 78 78 0 0 0 188 117" fill="none"/>
+              <radialGradient id="goldCenter" cx="38%" cy="26%" r="85%">
+                <stop offset="0%" stop-color="#FFF4B8"/>
+                <stop offset="55%" stop-color="#F0B91A"/>
+                <stop offset="100%" stop-color="#8B5E00"/>
+              </radialGradient>
+              <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#2a2a2a"/>
+                <stop offset="50%" stop-color="#0a0a0a"/>
+                <stop offset="100%" stop-color="#2a2a2a"/>
+              </linearGradient>
+              <path id="seal-top" d="M 39 120 A 81 81 0 0 1 201 120" fill="none"/>
+              <path id="seal-bot" d="M 35 120 A 85 85 0 0 0 205 120" fill="none"/>
             </defs>
 
-            <!-- Raios externos (16 pequenos triangulos) -->
-            <g transform="translate(110 110)" fill="#B0893B">
-              <polygon points="0,-105 4,-95 -4,-95"/>
-              <g transform="rotate(22.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(45)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(67.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(90)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(112.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(135)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(157.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(180)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(202.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(225)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(247.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(270)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(292.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(315)"><polygon points="0,-105 4,-95 -4,-95"/></g>
-              <g transform="rotate(337.5)"><polygon points="0,-105 4,-95 -4,-95"/></g>
+            <!-- Estrela serrilhada de 24 pontas -->
+            <g transform="translate(120 120)">
+              <polygon fill="url(#goldStar)" points="0,-110 13,-97 28,-106 37,-91 55,-95 60,-78 78,-78 78,-60 95,-55 91,-37 106,-28 97,-13 110,0 97,13 106,28 91,37 95,55 78,60 78,78 60,78 55,95 37,91 28,106 13,97 0,110 -13,97 -28,106 -37,91 -55,95 -60,78 -78,78 -78,60 -95,55 -91,37 -106,28 -97,13 -110,0 -97,-13 -106,-28 -91,-37 -95,-55 -78,-60 -78,-78 -60,-78 -55,-95 -37,-91 -28,-106 -13,-97"/>
             </g>
 
-            <!-- Disco principal dourado -->
-            <circle cx="110" cy="110" r="96" fill="url(#goldGradOuter)"/>
+            <!-- Anel preto -->
+            <circle cx="120" cy="120" r="92" fill="#0a0a0a"/>
 
-            <!-- Anel claro -->
-            <circle cx="110" cy="110" r="86" fill="#F1D27A"/>
+            <!-- Linha decorativa dourada interna -->
+            <circle cx="120" cy="120" r="88" fill="none" stroke="#FFD55C" stroke-width="0.6" opacity=".5"/>
 
-            <!-- Borda decorativa pontilhada -->
-            <circle cx="110" cy="110" r="80" fill="none" stroke="#B0893B" stroke-width="1.5" stroke-dasharray="2 5"/>
+            <!-- Centro dourado -->
+            <circle cx="120" cy="120" r="78" fill="url(#goldCenter)"/>
 
-            <!-- Disco creme central -->
-            <circle cx="110" cy="110" r="73" fill="url(#creamGrad)" stroke="#B0893B" stroke-width="1"/>
-
-            <!-- Centro creme claro -->
-            <circle cx="110" cy="110" r="62" fill="#FFFCEF"/>
-
-            <!-- Glow overlay -->
-            <circle cx="110" cy="110" r="73" fill="url(#goldGlow)"/>
+            <!-- Highlight 3D no canto superior -->
+            <ellipse cx="100" cy="100" rx="38" ry="24" fill="#FFF4B8" opacity=".28"/>
 
             <!-- Texto arco superior -->
-            <text font-family="Inter, sans-serif" font-weight="800" font-size="13" fill="#5a4416" letter-spacing="3">
-              <textPath href="#topArc" startOffset="50%" text-anchor="middle">★ GARANTIA TOTAL ★</textPath>
+            <text font-family="Inter, sans-serif" font-weight="900" font-size="11" fill="#FFD55C" letter-spacing="2.5">
+              <textPath href="#seal-top" startOffset="50%" text-anchor="middle">GARANTIA INCONDICIONAL</textPath>
             </text>
 
             <!-- Texto arco inferior -->
-            <text font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#5a4416" letter-spacing="4">
-              <textPath href="#botArc" startOffset="50%" text-anchor="middle">100% SATISFACAO</textPath>
+            <text font-family="Inter, sans-serif" font-weight="700" font-size="9.5" fill="#FFD55C" letter-spacing="2.5">
+              <textPath href="#seal-bot" startOffset="50%" text-anchor="middle">★ SEU DINHEIRO DE VOLTA ★</textPath>
             </text>
 
-            <!-- Numero 7 -->
-            <text x="110" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="78" fill="#1E3A5F">7</text>
+            <!-- "7" -->
+            <text x="120" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="74" fill="#0a0a0a">7</text>
 
             <!-- DIAS -->
-            <text x="110" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="14" fill="#1E3A5F" letter-spacing="6">DIAS</text>
+            <text x="120" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="13" fill="#0a0a0a" letter-spacing="5">DIAS</text>
 
-            <!-- Selo de check no topo -->
-            <g transform="translate(110, 50)">
-              <circle r="16" fill="#1E3A5F" stroke="#F1D27A" stroke-width="2.5"/>
-              <path d="M -7 0 L -2 5 L 8 -5" fill="none" stroke="#FFFCEF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Fita "DE GARANTIA" abaixo -->
+            <g transform="translate(120 245)">
+              <!-- Cauda esquerda (fishtail) -->
+              <path d="M -100 -18 L -118 -18 L -107 0 L -118 18 L -100 18 Z" fill="#1a1a1a"/>
+              <!-- Cauda direita -->
+              <path d="M 100 -18 L 118 -18 L 107 0 L 118 18 L 100 18 Z" fill="#1a1a1a"/>
+              <!-- Corpo principal -->
+              <rect x="-100" y="-22" width="200" height="44" fill="url(#ribbonGrad)"/>
+              <!-- Sombras de dobra (efeito de "papel dobrado") -->
+              <path d="M -100 -22 L -100 -18 L -108 -8 Z" fill="rgba(0,0,0,.60)"/>
+              <path d="M -100 22 L -100 18 L -108 8 Z" fill="rgba(0,0,0,.60)"/>
+              <path d="M 100 -22 L 100 -18 L 108 -8 Z" fill="rgba(0,0,0,.60)"/>
+              <path d="M 100 22 L 100 18 L 108 8 Z" fill="rgba(0,0,0,.60)"/>
+              <!-- Texto -->
+              <text x="0" y="6" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="17" fill="#FFD55C" letter-spacing="4">DE GARANTIA</text>
             </g>
           </svg>
         </div>
 
         <div class="guarantee__content">
-          <span class="guarantee__eyebrow">Compra sem risco</span>
-          <h3 class="guarantee__title">Se não amar, <em>devolvemos seu dinheiro.</em> Sem perguntas.</h3>
+          <span class="guarantee__eyebrow">Sem risco</span>
+          <h3 class="guarantee__title">Garantia de <em>7 dias</em> — Zero risco pra você</h3>
           <p class="guarantee__text">
-            Você tem <strong>7 dias inteiros</strong> pra abrir os arquivos, testar na sua máquina, fazer o primeiro bordado e decidir se a coleção é mesmo pra você. Se por qualquer motivo não gostar, manda um e-mail e a gente devolve <strong>100% do que você pagou</strong>.
+            Você não precisa decidir no escuro. Após a compra, você terá <strong>7 dias</strong> pra abrir os arquivos, visualizar a coleção, testar na sua máquina e conhecer todo o material disponível. Se por qualquer motivo sentir que não é pra você, basta solicitar o reembolso dentro do prazo.
           </p>
           <ul class="guarantee__list">
             <li>
               <svg class="icon icon-check"><use href="#i-check"/></svg>
-              Sem perguntas, sem burocracia
+              Sem burocracia
             </li>
             <li>
               <svg class="icon icon-check"><use href="#i-check"/></svg>
-              Devolução processada em até 5 dias úteis
+              Sem complicação
             </li>
             <li>
               <svg class="icon icon-check"><use href="#i-check"/></svg>
-              O risco é todo nosso — você só precisa testar
+              Você decide, sem precisar explicar nada
             </li>
           </ul>
           <p class="guarantee__signature">— Equipe Bordados da Fé</p>
