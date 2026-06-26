@@ -8,32 +8,41 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Fontes do Google sem bloquear render -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"></noscript>
-  <link rel="stylesheet" href="styles.css">
 
   <!-- Preload da capa do hero (acelera LCP) -->
   <link rel="preload" as="image" href="capa-produto.webp" imagesrcset="capa-produto-mobile.webp 500w, capa-produto.webp 1100w" imagesizes="(max-width: 600px) 92vw, 580px" fetchpriority="high">
 
-  <!-- Utmify Pixel -->
-  <script>
-    window.pixelId = "6a29e639fe1f5b7c32cb7ad8";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  </script>
+  <!-- Fontes do Google non-blocking -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"></noscript>
 
-  <!-- Utmify UTM tracker -->
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
+  <!-- Critical CSS inline (hero acima da dobra) -->
+  <style>
+    :root{--primary:#15263F;--primary-dark:#0F1C30;--secondary:#B33A30;--background:#FAF3E3;--bg-alt:#F2EBD9;--surface:#fff;--text:#111;--text-body:#1F1F1F;--text-muted:#4A4A4A;--cta:#16A34A;--cta-hover:#15803D;--urgency:#991B1B;--gold:#C9A24A;--font-base:'Inter','Manrope',system-ui,-apple-system,sans-serif;--font-display:'Playfair Display',Georgia,serif;--container:1140px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--font-base);font-size:20px;line-height:1.55;color:var(--text);background:var(--background);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--container);margin:0 auto;padding:0 24px}
+    .icon{display:inline-block;vertical-align:middle;flex-shrink:0;width:1em;height:1em;fill:currentColor}
+    .hero{background:var(--background);padding:64px 0 80px;text-align:center}
+    .hero__badge{display:inline-flex;align-items:center;gap:8px;background:var(--cta);color:#fff;font-size:14px;font-weight:700;letter-spacing:.4px;padding:8px 18px;border-radius:9999px;text-transform:uppercase}
+    .hero__badge .icon{width:18px;height:18px}
+    .hero__brand{margin-top:24px;display:flex;align-items:center;justify-content:center;gap:14px;font-family:var(--font-display);font-style:italic;font-weight:700;color:var(--secondary);font-size:24px;letter-spacing:.3px}
+    .hero__brand::before,.hero__brand::after{content:"";display:inline-block;width:48px;height:1.5px;background:var(--gold);opacity:.85}
+    .hero__title{margin:20px auto 24px;max-width:920px;font-family:var(--font-base);font-size:60px;font-weight:800;line-height:1.05;text-transform:uppercase;color:var(--primary);letter-spacing:-.01em}
+    .hero__title em{font-style:normal;color:var(--secondary)}
+    .hero__subtitle{max-width:620px;margin:0 auto 36px;font-weight:500;font-size:19px;color:var(--text-body);line-height:1.55;letter-spacing:.1px}
+    .hero__mockup{margin:48px auto 40px;width:100%;max-width:580px}
+    .hero__mockup-img{width:100%;height:auto;display:block}
+    @media(max-width:1024px){.hero__title{font-size:44px}}
+    @media(max-width:768px){.hero{padding:40px 0 56px}.hero__subtitle{font-size:18px}.hero__mockup{max-width:440px;margin:36px auto 32px}.hero__title{font-size:34px}body{font-size:17px}}
+    @media(max-width:480px){body{font-size:16px;line-height:1.5}.container{padding:0 18px}.hero{padding:28px 0 44px}.hero__mockup{max-width:92%;margin:24px auto}.hero__title{font-size:26px;line-height:1.12;margin:14px auto}.hero__subtitle{font-size:15.5px;max-width:none;margin-bottom:24px}.hero__brand{font-size:18px;gap:10px;margin-top:18px}.hero__brand::before,.hero__brand::after{width:28px}.hero__badge{font-size:11.5px;padding:7px 14px;letter-spacing:.3px}}
+  </style>
+
+  <!-- CSS completo non-blocking (já tem critical inline acima) -->
+  <link rel="preload" as="style" href="styles.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
 
@@ -816,6 +825,25 @@
       </p>
     </div>
   </footer>
+
+  <!-- Utmify Pixel (movido pro fim do body pra não atrasar o render) -->
+  <script>
+    window.pixelId = "6a29e639fe1f5b7c32cb7ad8";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- Utmify UTM tracker -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
 
 </body>
 </html>
