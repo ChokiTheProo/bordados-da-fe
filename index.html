@@ -8,7 +8,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <!-- Fontes do Google sem bloquear render -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
 
   <!-- Preload da capa do hero (acelera LCP) -->
@@ -345,28 +347,28 @@
 
       <div class="catalog-showcase">
         <figure class="catalog-tile">
-          <img src="bordado_delicado_nossa_senhora.webp" srcset="bordado_delicado_nossa_senhora-mobile.webp 380w, bordado_delicado_nossa_senhora.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Nossa Senhora" loading="lazy">
+          <img src="bordado_delicado_nossa_senhora.webp" srcset="bordado_delicado_nossa_senhora-mobile.webp 380w, bordado_delicado_nossa_senhora.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Nossa Senhora" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_delicado_aparecida.webp" srcset="bordado_delicado_aparecida-mobile.webp 380w, bordado_delicado_aparecida.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Nossa Senhora Aparecida" loading="lazy">
+          <img src="bordado_delicado_aparecida.webp" srcset="bordado_delicado_aparecida-mobile.webp 380w, bordado_delicado_aparecida.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Nossa Senhora Aparecida" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_imaculada.webp" srcset="bordado_imaculada-mobile.webp 380w, bordado_imaculada.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado de Nossa Senhora Imaculada" loading="lazy">
+          <img src="bordado_imaculada.webp" srcset="bordado_imaculada-mobile.webp 380w, bordado_imaculada.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado de Nossa Senhora Imaculada" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_delicado_espirito_santo.webp" srcset="bordado_delicado_espirito_santo-mobile.webp 380w, bordado_delicado_espirito_santo.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado do Espírito Santo" loading="lazy">
+          <img src="bordado_delicado_espirito_santo.webp" srcset="bordado_delicado_espirito_santo-mobile.webp 380w, bordado_delicado_espirito_santo.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado do Espírito Santo" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_delicado_anjo.webp" srcset="bordado_delicado_anjo-mobile.webp 380w, bordado_delicado_anjo.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Anjo em prece" loading="lazy">
+          <img src="bordado_delicado_anjo.webp" srcset="bordado_delicado_anjo-mobile.webp 380w, bordado_delicado_anjo.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Anjo em prece" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_jesus_bom_pastor.webp" srcset="bordado_jesus_bom_pastor-mobile.webp 380w, bordado_jesus_bom_pastor.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado de Jesus, o Bom Pastor" loading="lazy">
+          <img src="bordado_jesus_bom_pastor.webp" srcset="bordado_jesus_bom_pastor-mobile.webp 380w, bordado_jesus_bom_pastor.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado de Jesus, o Bom Pastor" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_delicado_cruz.webp" srcset="bordado_delicado_cruz-mobile.webp 380w, bordado_delicado_cruz.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Cruz" loading="lazy">
+          <img src="bordado_delicado_cruz.webp" srcset="bordado_delicado_cruz-mobile.webp 380w, bordado_delicado_cruz.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de Cruz" loading="lazy" decoding="async">
         </figure>
         <figure class="catalog-tile">
-          <img src="bordado_delicado_sao_jose.webp" srcset="bordado_delicado_sao_jose-mobile.webp 380w, bordado_delicado_sao_jose.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de São José" loading="lazy">
+          <img src="bordado_delicado_sao_jose.webp" srcset="bordado_delicado_sao_jose-mobile.webp 380w, bordado_delicado_sao_jose.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 768px) 45vw, 250px" alt="Bordado delicado de São José" loading="lazy" decoding="async">
         </figure>
       </div>
 
@@ -428,7 +430,7 @@
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 1
             </span>
-            <img class="bonus-card__img" src="bonus1.webp" srcset="bonus1-mobile.webp 380w, bonus1.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Pack Cristão Premium" loading="lazy">
+            <img class="bonus-card__img" src="bonus1.webp" srcset="bonus1-mobile.webp 380w, bonus1.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Pack Cristão Premium" loading="lazy" decoding="async">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Pack Cristão Premium</h3>
@@ -448,7 +450,7 @@
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 2
             </span>
-            <img class="bonus-card__img" src="bonus2.webp" srcset="bonus2-mobile.webp 380w, bonus2.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Pack Premium de Cruzes e Crucifixos" loading="lazy">
+            <img class="bonus-card__img" src="bonus2.webp" srcset="bonus2-mobile.webp 380w, bonus2.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Pack Premium de Cruzes e Crucifixos" loading="lazy" decoding="async">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Pack Premium de Cruzes e Crucifixos</h3>
@@ -468,7 +470,7 @@
               <svg class="icon"><use href="#i-gift"/></svg>
               Bônus 3
             </span>
-            <img class="bonus-card__img" src="bonus3.webp" srcset="bonus3-mobile.webp 380w, bonus3.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Kit de Etiquetas Religiosas (Editáveis no Canva)" loading="lazy">
+            <img class="bonus-card__img" src="bonus3.webp" srcset="bonus3-mobile.webp 380w, bonus3.webp 700w" sizes="(max-width: 480px) 92vw, (max-width: 1024px) 45vw, 320px" alt="Kit de Etiquetas Religiosas (Editáveis no Canva)" loading="lazy" decoding="async">
           </div>
           <div class="bonus-card__body">
             <h3 class="bonus-card__title">Kit de Etiquetas Religiosas (Editáveis no Canva)</h3>
@@ -501,7 +503,7 @@
             <img class="testimonial__avatar"
                  src="https://randomuser.me/api/portraits/women/65.jpg"
                  alt="Foto de Marlene Ribeiro"
-                 loading="lazy"
+                 loading="lazy" decoding="async"
                  width="56" height="56">
             <div class="testimonial__author-info">
               <strong>Marlene Ribeiro</strong>
@@ -519,7 +521,7 @@
             <img class="testimonial__avatar"
                  src="https://randomuser.me/api/portraits/women/72.jpg"
                  alt="Foto de Cleide Almeida"
-                 loading="lazy"
+                 loading="lazy" decoding="async"
                  width="56" height="56">
             <div class="testimonial__author-info">
               <strong>Cleide Almeida</strong>
@@ -537,7 +539,7 @@
             <img class="testimonial__avatar"
                  src="https://randomuser.me/api/portraits/women/79.jpg"
                  alt="Foto de Rosângela Pinto"
-                 loading="lazy"
+                 loading="lazy" decoding="async"
                  width="56" height="56">
             <div class="testimonial__author-info">
               <strong>Rosângela Pinto</strong>
@@ -555,7 +557,7 @@
             <img class="testimonial__avatar"
                  src="https://randomuser.me/api/portraits/women/68.jpg"
                  alt="Foto de Juliana Castro"
-                 loading="lazy"
+                 loading="lazy" decoding="async"
                  width="56" height="56">
             <div class="testimonial__author-info">
               <strong>Juliana Castro</strong>
@@ -583,7 +585,7 @@
             Mais vendido
           </span>
 
-          <img class="price-card__cover" src="capa-produto.webp" srcset="capa-produto-mobile.webp 500w, capa-produto.webp 1100w" sizes="(max-width: 600px) 92vw, 580px" alt="Coleção Bordados da Fé — caixa premium" loading="lazy">
+          <img class="price-card__cover" src="capa-produto.webp" srcset="capa-produto-mobile.webp 500w, capa-produto.webp 1100w" sizes="(max-width: 600px) 92vw, 580px" alt="Coleção Bordados da Fé — caixa premium" loading="lazy" decoding="async">
 
           <h3 class="price-card__title">Coleção Bordados da Fé</h3>
           <p class="price-card__subtitle">130 desenhos + 3 bônus exclusivos</p>
