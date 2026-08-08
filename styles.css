@@ -994,16 +994,6 @@ button{
 .pricing{
   display:flex;
   justify-content:center;
-  flex-wrap:wrap;
-  gap:28px;
-  align-items:stretch;
-}
-.price-card--plus{
-  border:2px solid var(--cta);
-}
-.price-card--plus .price-card__pill-top{
-  background:var(--cta);
-  color:#fff;
 }
 
 .price-card{
